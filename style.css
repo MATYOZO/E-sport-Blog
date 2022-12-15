@@ -11,11 +11,12 @@ html{
 :root{
     --lightpurple: #7D64FE;
     --darkpurple: #7860F3;
-    --textandborders: #CECECE;
+    --textandborders: #94908f;
     --mainwhite: #fff;
 }
 body{
     background-color: #f1edec;
+    overflow-x: hidden;
 }
 nav{
     display: flex;
@@ -40,15 +41,190 @@ nav ul a{
     text-decoration: none;
 }
 nav ul>li{
+    font-style: italic;
     font-size: 1.4rem;
     padding-left: 5.5rem;
+    padding-top: 0.9rem;
+    color: black;
 }
 .container{
     display: flex;
     justify-content: center;
+    position: relative;
 }
-.container bdg{
+.title{
+    color: #f1edec;
+    font-style: italic;
+    position: absolute;
+    font-size: 10rem;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 20vh;
+}
+.undertitle{
+    color: #f1edec;
+    margin-top: 12vh;
+    border-radius: 2rem;
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    position: absolute;
+    align-self: center;
+    background-color: var(--darkpurple);
+}
+.bgd{
     margin-top: 0.5%;
     width: 95vw;
     height:  57rem;
+    position: relative;
+}
+
+.b1{
+    position: absolute;
+    left: center;
+    top: 75%;
+    width: 65vw;
+    height: 50rem;
+    background-color: #f1edec;
+
+}
+
+.kreska{
+    position: absolute;
+    background-color: black;
+    width: 3vw;
+    height: 0.20rem;
+    top: 5.3%;
+    left: 4%;
+}
+
+.ftd{
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-left: 10%;
+    padding-top: 1.4%;
+    font-weight: 800;
+    align-self: center;
+}
+.bzdj1{
+    position: absolute;
+    top:  11.5%;
+    left: 4%;
+    width: 50%;
+    height: 65%;
+}
+
+.b1data{
+    margin-left: 58%;
+    margin-top: 5%;
+    color: var(--textandborders);
+    font-size: 1.2rem;
+}
+
+.b1 h3{
+    margin-left:58%;
+    margin-top: 2%;
+    padding-right: 1%;
+    font-size: 3rem;
+    color: var(--darkpurple);
+    font-style: italic;
+}
+
+.b1opis{
+    margin-left: 58%;
+    margin-top: 2%;
+    padding-right: 4.5%;
+    font-size: 1.4rem;
+    color: var(--textandborders)
+}
+
+/* 900 */
+
+
+@media only screen and (max-width: 900px){
+    
+
+    .title{
+        margin-top: -10%;
+
+    }
+    nav ul>li{
+        padding-left: 4rem;
+    }
+
+    .b1{
+        width: 100%;
+    }
+    .ftd{
+        margin-top: 0.5%;
+    }
+    .b1 h3{
+        font-size: 2rem;
+    }
+}
+.burger{
+    display: none;
+}
+.burger_list{
+    display: none;
+}
+/* 600 */ 
+
+@media only screen and (max-width: 600px){
+    .bgd{
+        width: 100%;
+        margin-bottom: 28%;
+        height: 36rem;
+    }
+    .title{
+        margin-top: -20%;
+        font-size: 8rem;
+    }
+    
+    .undertitle{
+        margin-top: 5%;
+    }
+
+    nav ul{
+        display: none;
+    }
+    .burger{
+        display: inline;
+        position: absolute;
+        right: 2rem;
+        top: -0.2rem;
+        font-size: 4.5rem;
+    }
+    .burger_list{
+        display: none;
+        align-items: flex-end;
+        flex-direction: column;
+        margin-right: 5rem;
+    }
+    .ftd{
+        font-size: 3.5rem;
+        font-weight: 500;
+        margin-top: -0.5%;
+        margin-left: 37%;
+    }
+    .kreska{
+        margin-left: 28%;
+    }
+
+    .bzdj1{
+        padding-top: 5%;
+        width: 100%;
+        margin-left: -4%;
+    }
+    .b1data{
+        margin-top: 60%;
+        margin-left: 5%;
+    }
+    
+    .b1 h3{
+        margin-left: 5%;
+    }
+    
+    .b1opis{
+        margin-left: 5%;
+    }
 }
