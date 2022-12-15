@@ -9,7 +9,7 @@ html{
 }
 
 :root{
-    --lightpurple: #7D64FE;
+    --lightpurple: #7e64fd;
     --darkpurple: #7860F3;
     --textandborders: #94908f;
     --mainwhite: #fff;
@@ -28,6 +28,7 @@ nav h1{
     font-size: 2.4rem;
     margin-left: 3%;
     align-self: center;
+    text-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px ;
 }
 nav ul{
     display: flex;
@@ -37,15 +38,35 @@ nav ul{
     right: 6rem;
     list-style: none;
 }
+.burger{
+    display: none;
+}
+.burger_list{
+    display: none;
+}
+.purple{
+    color: var(--darkpurple)
+}
+.purple:hover{
+    color: black;
+    text-shadow: rgba(100, 100, 111, 0.2) 0px 2px 6px;
+}
 nav ul a{
     text-decoration: none;
+    text-shadow: rgba(99, 99, 99, 0.2) 0px 2px 6px ;
+    color: black;
 }
 nav ul>li{
     font-style: italic;
     font-size: 1.4rem;
+    text-shadow: rgba(99, 99, 99, 0.2) 0px 2px 6px ;
     padding-left: 5.5rem;
     padding-top: 0.9rem;
-    color: black;
+    color:black;
+}
+nav ul a:hover{
+    color:var(--darkpurple);
+    text-shadow: var(--darkpurple) 0px 7px 29px;
 }
 .container{
     display: flex;
@@ -55,26 +76,29 @@ nav ul>li{
 .title{
     color: #f1edec;
     font-style: italic;
+    text-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px, rgba(0, 0, 0, 0.3) 0px 3px 7px;
     position: absolute;
     font-size: 10rem;
     align-self: center;
     text-align: center;
-    margin-bottom: 20vh;
+    margin-bottom: 25vh;
 }
 .undertitle{
     color: #f1edec;
-    margin-top: 12vh;
+    margin-top: 16vh;
     border-radius: 2rem;
     font-size: 2rem;
     padding: 1rem 1rem;
     position: absolute;
     align-self: center;
     background-color: var(--darkpurple);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 .bgd{
     margin-top: 0.5%;
     width: 95vw;
     height:  57rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     position: relative;
 }
 
@@ -83,9 +107,9 @@ nav ul>li{
     left: center;
     top: 75%;
     width: 65vw;
-    height: 50rem;
+    height: 46rem;
     background-color: #f1edec;
-
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .kreska{
@@ -93,6 +117,7 @@ nav ul>li{
     background-color: black;
     width: 3vw;
     height: 0.20rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     top: 5.3%;
     left: 4%;
 }
@@ -101,6 +126,7 @@ nav ul>li{
     font-style: italic;
     font-size: 1.6rem;
     margin-left: 10%;
+    text-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px ;
     padding-top: 1.4%;
     font-weight: 800;
     align-self: center;
@@ -110,12 +136,14 @@ nav ul>li{
     top:  11.5%;
     left: 4%;
     width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     height: 65%;
 }
 
 .b1data{
     margin-left: 58%;
     margin-top: 5%;
+    text-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px;
     color: var(--textandborders);
     font-size: 1.2rem;
 }
@@ -125,18 +153,75 @@ nav ul>li{
     margin-top: 2%;
     padding-right: 1%;
     font-size: 3rem;
+    text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     color: var(--darkpurple);
     font-style: italic;
 }
 
 .b1opis{
+
     margin-left: 58%;
     margin-top: 2%;
+    text-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     padding-right: 4.5%;
     font-size: 1.4rem;
     color: var(--textandborders)
 }
+.ultraliga{
+    background-color: var(--darkpurple);
+    width: 100vw;
+    height: 40rem;
+    margin-top: 20%;
+    box-shadow: var(--lightpurple) 0px 0px 10px 0px;
+}
 
+.ultraliga h1{
+    color: var(--lightpurple);
+    font-size: 33rem;
+    text-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px, rgba(0, 0, 0, 0.3) 0px 3px 7px;
+}
+
+.leagues h1{
+    font-size: 2.4rem;
+    margin-left: -62%;
+    margin-top: 5%;
+    align-self: center;
+    text-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px ; 
+}
+
+.ultra{
+    width: 30vw;
+    margin-left: 2%;
+    margin-top: 6%;
+}
+
+.tytulultra{
+    margin-top: 3.5%;
+    margin-left: 5%;
+    padding-right: 1%;
+    font-size: 3rem;
+    text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    color: var(--darkpurple);
+    font-style: italic;
+}
+.opisultra{
+    margin-top: 3.5%;
+    margin-left: 5%;
+    text-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding-right: 25%;
+    font-size: 2rem;
+    color: var(--textandborders)
+}
+.ultraliga_div{
+    display: flex;
+}
+.leagues_right{
+    font-size: 2rem;
+}
+.leagues_right table td{
+    border-bottom: 1px solid gray;
+    padding-right: 1.5rem;
+}
 /* 900 */
 
 
@@ -161,12 +246,6 @@ nav ul>li{
         font-size: 2rem;
     }
 }
-.burger{
-    display: none;
-}
-.burger_list{
-    display: none;
-}
 /* 600 */ 
 
 @media only screen and (max-width: 600px){
@@ -174,6 +253,7 @@ nav ul>li{
         width: 100%;
         margin-bottom: 28%;
         height: 36rem;
+        box-shadow: none;
     }
     .title{
         margin-top: -20%;
@@ -190,15 +270,28 @@ nav ul>li{
     .burger{
         display: inline;
         position: absolute;
-        right: 2rem;
+        right: 1.5rem;
         top: -0.2rem;
         font-size: 4.5rem;
+        cursor: pointer;
     }
     .burger_list{
         display: none;
-        align-items: flex-end;
-        flex-direction: column;
-        margin-right: 5rem;
+        margin-right: 7rem;
+        list-style: none;
+        text-decoration: none;
+    }
+    .burger_list a{
+        text-decoration: none;
+    }
+    .burger_list li{
+        padding-left: 2rem;
+        margin-bottom: 1rem;
+        font-size: 1.7rem;
+        color: black;
+    }
+    .b1{
+        box-shadow: none;
     }
     .ftd{
         font-size: 3.5rem;
@@ -208,15 +301,18 @@ nav ul>li{
     }
     .kreska{
         margin-left: 28%;
+        
     }
 
     .bzdj1{
+        box-shadow: none;
         padding-top: 5%;
         width: 100%;
+        height: 36rem;
         margin-left: -4%;
     }
     .b1data{
-        margin-top: 60%;
+        margin-top: 65%;
         margin-left: 5%;
     }
     
@@ -226,5 +322,48 @@ nav ul>li{
     
     .b1opis{
         margin-left: 5%;
+    }
+}
+
+
+
+/* 550 */ 
+
+@media only screen and (max-width: 550px){
+    .b1data{
+        margin-top: 70%;
+        margin-left: 5%;
+    }
+}
+/* 420 */ 
+
+@media only screen and (max-width: 420px){
+    
+    .title{
+        font-size: 6rem;
+    }
+    .ftd{
+        margin-top: 2%;
+        margin-left: 30%;
+    }
+    .kreska{
+        margin-top: 2%;
+        margin-left: 20%;
+    }
+    .b1data{
+        margin-top: 90%;
+        margin-left: 5%;
+    }
+}
+    
+/* 375 */ 
+
+@media only screen and (max-width: 420px){
+    .b1data{
+        margin-top: 100%;
+    }
+    .burger_list li{
+        padding-left: 2rem;
+        font-size: 1.rem;
     }
 }
