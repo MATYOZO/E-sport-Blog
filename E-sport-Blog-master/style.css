@@ -1,0 +1,506 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root{
+    --lightpurple: #856dff;
+    --darkpurple: #7860F3;
+    --textandborders: #94908f;
+    --mainwhite: #fff;
+    --background: #f1edec;
+}
+body{
+    background-color: #f1edec;
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    width: 100vw;
+    height: 5rem;
+    position: relative;
+}
+nav h1{
+    font-size: 2.4rem;
+    margin-left: 3%;
+    align-self: center;
+    text-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px ;
+}
+
+nav ul{
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+    position: absolute;
+    right: 6rem;
+    font-weight: 500;
+    list-style: none;
+}
+.burger{
+    display: none;
+}
+.burger_list{
+    display: none;
+}
+.purple{
+    color: var(--darkpurple)
+}
+.purple:hover{
+    color: black;
+    text-shadow: rgba(100, 100, 111, 0.2) 0px 2px 6px;
+}
+
+nav ul a{
+    text-decoration: none;
+    text-shadow: rgba(99, 99, 99, 0.2) 0px 2px 6px ;
+    color: black;
+}
+nav ul>li{
+    font-style: italic;
+    font-size: 1.4rem;
+    text-shadow: rgba(99, 99, 99, 0.2) 0px 2px 6px ;
+    padding-left: 5.5rem;
+    padding-top: 0.9rem;
+    color:black;
+}
+nav ul a:hover{
+    color:var(--darkpurple);
+    text-shadow: var(--darkpurple) 0px 7px 29px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.title{
+    color: #f1edec;
+    font-style: italic;
+    text-shadow: rgba(0, 0, 0, 0.7) 5px 7px 0px;
+    position: absolute;
+    font-size: 10rem;
+    font-weight: 800;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 25vh;
+}
+.title:hover{
+    text-shadow: var(--mainwhite) 0px  0px  10px;
+}
+
+.undertitle{
+    color: #f1edec;
+    margin-top: 16vh;
+    border-radius: 2rem;
+    width: 35rem;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem 1rem;
+    position: absolute;
+    align-self: center;
+    text-align: center;
+    background-color: var(--darkpurple);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+
+.bgd{
+    margin-top: 0.5%;
+    width: 95vw;
+    height:  57rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+}
+
+.b1{
+    position: absolute;
+    left: center;
+    top: 75%;
+    width: 65vw;
+    height: 46rem;
+    background-color: #f1edec;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.kreska{
+    position: absolute;
+    background-color: black;
+    width: 3vw;
+    height: 0.20rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    top: 5.3%;
+    left: 4%;
+}
+
+.ftd{
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-left: 10%;
+    text-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px ;
+    padding-top: 1.2%;
+    font-weight: 800;
+    align-self: center;
+}
+.bzdj1{
+    position: absolute;
+    top:  11.5%;
+    left: 4%;
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 65%;
+    cursor: pointer;
+}
+
+.bzdj1:hover{
+    opacity: 0.8;
+    
+}
+
+.b1data{
+    margin-left: 58%;
+    margin-top: 5%;
+    text-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px;
+    color: var(--textandborders);
+    font-size: 1.2rem;
+}
+
+.b1 h3{
+    margin-left:58%;
+    margin-top: 2%;
+    padding-right: 1%;
+    font-size: 3rem;
+    text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    color: var(--darkpurple);
+    font-style: italic;
+}
+
+.b1 h3 a{
+    color: var(--darkpurple);
+    text-decoration: none;
+}
+
+.b1 h3 a:hover{
+    color: black;
+    cursor: pointer;
+
+}
+
+
+.b1opis{
+
+    margin-left: 58%;
+    margin-top: 2%;
+    text-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding-right: 4.5%;
+    font-size: 1.4rem;
+    color: var(--textandborders)
+}
+
+.ultraliga_div{
+    display: flex;
+}
+
+.ultraliga{
+    background-color: var(--darkpurple);
+    width: 100vw;
+    height: 35rem;
+    margin-top: 23%;
+    box-shadow: var(--lightpurple) 0px 0px 10px 0px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.ultraliga h1{
+    color: var(--lightpurple);
+    font-size: 28rem;
+    width: 100vw;
+    text-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px, rgba(0, 0, 0, 0.3) 0px 3px 7px;
+}
+
+
+
+.leagues h1{
+    font-size: 2.4rem;
+    margin-left: -80%;
+    margin-top: 4%;
+    align-self: center;
+    text-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px ; 
+}
+
+.ultra{
+    width: 45vw;
+    margin-left: 2%;
+    margin-top: 13%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+
+.ultra:hover{
+    opacity: 0.8;
+    
+}
+.tytulultra{
+    margin-top: 5%;
+}
+.tytulultra a{
+    width: 100vw;
+    margin-left: 5%;
+    padding-right: 1%;
+    font-size: 3rem;
+    text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    color: var(--darkpurple);
+    font-style: italic;
+    text-decoration: none;
+}
+
+.tytulultra a:hover{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tytulultra:hover ~ .opisultra{
+    color: var(--darkpurple)
+}
+
+.opisultra{
+    margin-top: 3.5%;
+    margin-left: 5%;
+    text-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding-right: 25%;
+    font-size: 2rem;
+    color: var(--textandborders)
+}
+
+/* 900 */
+
+
+@media only screen and (max-width: 900px){
+    
+
+    .title{
+        margin-top: -10%;
+
+    }
+    nav ul>li{
+        padding-left: 4rem;
+    }
+
+    .b1{
+        width: 100%;
+    }
+    .ftd{
+        margin-top: 0.5%;
+    }
+    .b1 h3{
+        font-size: 2rem;
+    }
+    .ultraliga{
+        width: 100%;
+        height: 20rem;
+        margin-top: 40%;
+    }
+
+
+    .ultraliga h1{
+        font-size: 15rem;
+    }
+    table td{
+        display: none;
+    }
+
+    .ultra{
+        margin-top: 18.5%;
+
+    }
+}
+/* 600 */ 
+
+@media only screen and (max-width: 600px){
+
+    .bgd{
+        width: 100%;
+        margin-bottom: 28%;
+        height: 36rem;
+        box-shadow: none;
+    }
+    .title{
+        margin-top: -20%;
+        font-size: 8rem;
+    }
+    
+    .undertitle{
+        margin-top: 5%;
+    }
+
+    nav ul{
+        display: none;
+    }
+    .burger{
+        display: inline;
+        position: absolute;
+        right: 1.5rem;
+        top: -0.2rem;
+        font-size: 4.5rem;
+        cursor: pointer;
+    }
+    .burger_list{
+        display: none;
+        margin-right: 7rem;
+        list-style: none;
+        text-decoration: none;
+    }
+    .burger_list a{
+        text-decoration: none;
+    }
+    .burger_list li{
+        padding-left: 2rem;
+        margin-bottom: 1rem;
+        font-size: 1.7rem;
+        color: black;
+    }
+    .b1{
+        box-shadow: none;
+    }
+    .ftd{
+        font-size: 3.5rem;
+        font-weight: 500;
+        margin-top: -0.5%;
+        margin-left: 37%;
+    }
+    .kreska{
+        margin-left: 28%;
+        
+    }
+
+    .bzdj1{
+        box-shadow: none;
+        padding-top: 5%;
+        width: 100%;
+        height: 36rem;
+        margin-left: -4%;
+    }
+    .b1data{
+        margin-top: 65%;
+        margin-left: 5%;
+    }
+    
+    .b1 h3{
+        margin-left: 5%;
+    }
+    
+    .b1opis{
+        margin-left: 5%;
+    }
+
+    .ultraliga{
+        width: 100%;
+        height: 15rem;
+        margin-top: 80%;
+    }
+    
+    .ultraliga h1{
+        padding-top: 1.5%;
+        padding-left: 1%;
+        font-size: 10rem;
+        box-shadow: none;
+    }
+
+}
+
+
+
+/* 550 */ 
+
+@media only screen and (max-width: 550px){
+    .b1data{
+        margin-top: 70%;
+        margin-left: 5%;
+    }
+    .ultraliga{
+        margin-top: 90%;
+        width: 100%;
+    }
+    
+    .ultraliga h1{
+        padding-top: 2%;
+        padding-left: 3%;
+        font-size: 9rem;
+    }
+    .tytulultra{
+        margin-left: 5%;
+    }
+    .tytulultra a{
+        font-size: 2.5rem;
+    }
+    .opisultra{
+        margin-left: 11%;
+
+    }
+}
+/* 420 */ 
+
+@media only screen and (max-width: 420px){
+    
+    .title{
+        font-size: 6rem;
+    }
+    .ftd{
+        margin-top: 2%;
+        margin-left: 30%;
+    }
+    .kreska{
+        margin-top: 2%;
+        margin-left: 20%;
+    }
+    .b1data{
+        margin-top: 90%;
+        margin-left: 5%;
+    }
+    .ultraliga{
+        margin-top: 140%;
+        width: 100%;
+    }
+    
+    .ultraliga h1{
+        padding-top: 6%;
+        font-size: 7.2rem;
+    }
+
+    .ultra{
+        margin-top: 25%;
+    }
+
+}
+    
+/* 375 */ 
+
+@media only screen and (max-width: 420px){
+    .b1data{
+        margin-top: 100%;
+    }
+    .burger_list li{
+        padding-left: 2rem;
+        font-size: 1.rem;
+    }
+    .ultraliga h1{
+        padding-top: 8%;
+        font-size: 6.5rem;
+    }
+    .tytulultra{
+        margin-left: 5%;
+    }
+    .tytulultra a{
+        font-size: 1.5rem
+    }
+    .opisultra{
+        margin-left: 10%;
+        font-size: 1.5rem;
+    }
+}
