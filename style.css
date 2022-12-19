@@ -18,6 +18,7 @@ html{
 body{
     background-color: #f1edec;
     overflow-x: hidden;
+    margin-bottom: 10vw;
 }
 nav{
     display: flex;
@@ -26,6 +27,7 @@ nav{
     position: relative;
 }
 nav h1{
+    margin-top: 0.5rem;
     font-size: 2.4rem;
     margin-left: 3%;
     align-self: center;
@@ -278,6 +280,64 @@ nav ul a:hover{
     color: var(--textandborders)
 }
 
+
+
+.sponsors{
+    background-color: var(--darkpurple);
+    width: 100vw;
+    height: 17rem;
+    margin-top: 7vw;
+    box-shadow: var(--lightpurple) 0px 0px 10px 0px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.sponsors ol, ol li {
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.sponsors ol li {
+    padding-right: 1vw;
+    margin-left: 5vw;
+    float: left;
+	display: inline;
+	white-space: nowrap;
+}
+
+.zd1{
+    margin-top: 3vw;
+    width: 13vw;
+}
+
+.zd2{
+    margin-top: 1.5vw;
+    width: 9vw;
+}
+
+.zd3{
+    margin-top: 1.5vw;
+    width: 9vw;
+}
+
+.zd4{
+    margin-top: 2vw;
+    width: 9vw;
+}
+
+.zd5{
+    margin-top: 1vw;
+    width: 7vw;
+}
+
+.zd6{
+    margin-top: 1vw;
+    width: 7vw;
+}
 /* 900 */
 
 
@@ -310,9 +370,6 @@ nav ul a:hover{
 
     .ultraliga h1{
         font-size: 15rem;
-    }
-    table td{
-        display: none;
     }
 
     .ultra{
@@ -411,6 +468,43 @@ nav ul a:hover{
         font-size: 10rem;
         box-shadow: none;
     }
+    .ultraliga_div{
+        display: block;
+    }
+    .ultra{
+        margin-left: 0;
+        width: 100vw;
+    }
+
+    .leagues h1{
+        align-self: center;
+        padding: 0;
+        margin: 0;
+        font-size: 4rem;
+        margin-top: -42rem;
+        text-align: center;
+    }
+    
+    .tytulultra{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        margin-top: 40rem;
+    }
+    
+    .opisultra{
+        margin: 0;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        margin-top: 3rem;
+        font-size: 2rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 8rem;
+    }
 
 }
 
@@ -429,19 +523,18 @@ nav ul a:hover{
     }
     
     .ultraliga h1{
-        padding-top: 2%;
-        padding-left: 3%;
         font-size: 9rem;
     }
+    .leagues h1{
+        margin-left: -2rem;
+        margin-top: -39rem;
+    }
     .tytulultra{
-        margin-left: 5%;
+        margin-top: 38rem;
+        margin-left: -2rem;
     }
     .tytulultra a{
         font-size: 2.5rem;
-    }
-    .opisultra{
-        margin-left: 11%;
-
     }
 }
 /* 420 */ 
@@ -472,10 +565,16 @@ nav ul a:hover{
         padding-top: 6%;
         font-size: 7.2rem;
     }
-
     .ultra{
         margin-top: 25%;
     }
+    .leagues{
+        margin-top: -31rem;
+    }
+
+
+
+
 
 }
     
@@ -493,14 +592,15 @@ nav ul a:hover{
         padding-top: 8%;
         font-size: 6.5rem;
     }
+
+    .leagues h1{
+        font-size: 3.5rem;
+        margin-top: -28rem;
+    }
+
     .tytulultra{
-        margin-left: 5%;
+        margin-top: 28rem;
     }
-    .tytulultra a{
-        font-size: 1.5rem
-    }
-    .opisultra{
-        margin-left: 10%;
-        font-size: 1.5rem;
-    }
+
+
 }
