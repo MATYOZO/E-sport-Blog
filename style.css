@@ -91,7 +91,7 @@ nav ul a:hover{
     margin-bottom: 25vh;
 }
 .title:hover{
-    text-shadow: var(--mainwhite) 0px  0px  10px;
+    text-shadow: rgba(255, 255, 255, 0.5) 0px  0px  10px;
 }
 
 .undertitle{
@@ -106,7 +106,7 @@ nav ul a:hover{
     align-self: center;
     text-align: center;
     background-color: var(--darkpurple);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 14px 28px, rgba(0, 0, 0, 0.2) 0px 10px 10px;
 }
 
 
@@ -211,7 +211,7 @@ nav ul a:hover{
     width: 100vw;
     height: 35rem;
     margin-top: 23%;
-    box-shadow: var(--lightpurple) 0px 0px 10px 0px;
+    box-shadow: #856dff 0px 0px 10px 0px;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -222,7 +222,7 @@ nav ul a:hover{
     color: var(--lightpurple);
     font-size: 28rem;
     width: 100vw;
-    text-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px, rgba(0, 0, 0, 0.3) 0px 3px 7px;
+    text-shadow: rgba(50, 50, 93, 0.158) 0px 6px 12px, rgba(0, 0, 0, 0.178) 0px 3px 7px;
 }
 
 
@@ -286,7 +286,7 @@ nav ul a:hover{
     background-color: var(--darkpurple);
     width: 100vw;
     height: 10rem;
-    margin-top: 5.5vw;
+    margin-top: 5vw;
     box-shadow: var(--lightpurple) 0px 0px 10px 0px;
     align-items: center;
     justify-content: center;
