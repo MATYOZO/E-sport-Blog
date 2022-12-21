@@ -6,12 +6,13 @@ input[type=text], select, textarea {
     box-sizing: border-box; 
     margin-top: 6px;
     margin-bottom: 16px; 
-    resize: vertical
+    resize: vertical;
+    border: 0.18rem solid var(--textandborders);
   }
   input[type=text]:focus,
   select:focus, 
   textarea:focus {
-    outline-color: #856dff;;
+    outline-color: var(--darkpurple);
   }
   
   input[type=submit] {
@@ -26,9 +27,20 @@ input[type=text], select, textarea {
   input[type=submit]:hover {
     background-color: #45a049;
   }
-  
+
+
+  label{
+    color: var(--darkpurple);
+  }
+
+  select{
+    background-color: #f1edec;
+    border: 0.18rem solid var(--textandborders);
+  }
+
   .container {
     margin-top: 20vh;
     border-radius: 5px;
     padding: 20px;
   }
+

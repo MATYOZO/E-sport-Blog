@@ -18,7 +18,7 @@ html{
 body{
     background-color: #f1edec;
     overflow-x: hidden;
-    margin-bottom: 10vw;
+
 }
 nav{
     display: flex;
@@ -285,8 +285,8 @@ nav ul a:hover{
 .sponsors{
     background-color: var(--darkpurple);
     width: 100vw;
-    height: 17rem;
-    margin-top: 7vw;
+    height: 10rem;
+    margin-top: 5.5vw;
     box-shadow: var(--lightpurple) 0px 0px 10px 0px;
     align-items: center;
     justify-content: center;
@@ -302,41 +302,41 @@ nav ul a:hover{
 }
 
 .sponsors ol li {
-    padding-right: 1vw;
-    margin-left: 5vw;
+    padding-right: 4vw;
+    margin-left: 6vw;
     float: left;
 	display: inline;
 	white-space: nowrap;
 }
 
 .zd1{
-    margin-top: 3vw;
-    width: 13vw;
+    margin-top: 2vw;
+    width: 9.5vw;
 }
 
 .zd2{
-    margin-top: 1.5vw;
-    width: 9vw;
+    margin-top: 1vw;
+    width: 6.3vw;
 }
 
 .zd3{
-    margin-top: 1.5vw;
-    width: 9vw;
+    margin-top: 1vw;
+    width: 6vw;
 }
 
 .zd4{
-    margin-top: 2vw;
-    width: 9vw;
+    margin-top: 1vw;
+    width: 6vw;
 }
 
 .zd5{
-    margin-top: 1vw;
-    width: 7vw;
+    margin-top: 0.7vw;
+    width: 4vw;
 }
 
 .zd6{
-    margin-top: 1vw;
-    width: 7vw;
+    margin-top: 0.7vw;
+    width: 4vw;
 }
 /* 900 */
 
