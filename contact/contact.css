@@ -1,55 +1,60 @@
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 6px;
-    margin-bottom: 16px; 
-    resize: vertical;
-    background-color: #f1edec;
-    border: 0.18rem solid var(--textandborders);
-    box-shadow:  0px 1px 5px hsla(0, 0%, 0%, 0.1);
-  }
-  input[type=text]:focus,
-  select:focus, 
-  textarea:focus {
-    outline-color: var(--darkpurple);
-  }
-  
-  input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    box-shadow:  0px 0px 5px hsla(0, 0%, 0%, 0.250);
-    
-  }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background-color: #f1edec;
+  border: 0.18rem solid var(--textandborders);
+  box-shadow: 0px 1px 5px hsla(0, 0%, 0%, 0.25);
+  caret-color: var(--lightpurple);
+  color: var(--darkpurple);
+  font-family: sans-serif;
+  font-weight: 600;
+  text-shadow: 0px 0px 1px hsla(0, 0%, 0%, 0.25);
+}
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+  outline-color: var(--darkpurple);
+}
 
-  input::placeholder, textarea::placeholder{
-    font-family: sans-serif;
-    opacity: 0.6;
-    font-weight: 00;
-    letter-spacing: 0.05rem;
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px hsla(0, 0%, 0%, 0.25);
+}
 
-  }
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
 
-  label{
-    text-shadow: rgba(0, 0, 0, 0.15) 1px 1px 3px;
-    font-weight: 600;
-    letter-spacing: 0.13rem;
-    color: var(--darkpurple);
-  }
+input::placeholder,
+textarea::placeholder {
+  font-family: sans-serif;
+  opacity: 0.6;
+  font-weight: 00;
+  letter-spacing: 0.05rem;
+}
 
-  .container {
-    margin-top: 20vh;
-    border-radius: 5px;
-    padding: 20px;
-  }
+label {
+  text-shadow: 0px 0px 1px hsla(0, 0%, 0%, 0.25);
+  font-weight: 600;
+  letter-spacing: 0.13rem;
+  color: var(--darkpurple);
+}
 
+.container {
+  margin-top: 20vh;
+  border-radius: 5px;
+  padding: 20px;
+}

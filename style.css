@@ -1,606 +1,625 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html{
-    font-size: 10px;
-    font-family: "Montserrat", sans-serif;
-}
-
-:root{
-    --lightpurple: #856dff;
-    --darkpurple: #7860F3;
-    --textandborders: #94908f;
-    --mainwhite: #fff;
-    --background: #f1edec;
-}
-body{
-    background-color: #f1edec;
-    overflow-x: hidden;
-
-}
-nav{
-    display: flex;
-    width: 100vw;
-    height: 5rem;
-    position: relative;
-}
-nav h1{
-    margin-top: 0.5rem;
-    font-size: 2.4rem;
-    margin-left: 3%;
-    align-self: center;
-    text-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px ;
+html {
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
 }
 
-nav ul{
-    display: flex;
-    align-self: center;
-    justify-content: flex-end;
-    position: absolute;
-    right: 6rem;
-    font-weight: 500;
-    list-style: none;
+:root {
+  --lightpurple: #856dff;
+  --darkpurple: #7860f3;
+  --textandborders: #94908f;
+  --mainwhite: #fff;
+  --background: #f1edec;
 }
-.burger{
-    display: none;
-}
-.burger_list{
-    display: none;
-}
-.purple{
-    color: var(--darkpurple)
-}
-.purple:hover{
-    color: black;
-    text-shadow: rgba(100, 100, 111, 0.2) 0px 2px 6px;
+body {
+  background-color: #f1edec;
+  overflow-x: hidden;
 }
 
-nav ul a{
-    text-decoration: none;
-    text-shadow: rgba(99, 99, 99, 0.2) 0px 2px 6px ;
-    color: black;
+nav {
+  display: flex;
+  width: 100vw;
+  height: 5rem;
+  position: relative;
 }
-nav ul>li{
-    font-style: italic;
-    font-size: 1.4rem;
-    text-shadow: rgba(99, 99, 99, 0.2) 0px 2px 6px ;
-    padding-left: 5.5rem;
-    padding-top: 0.9rem;
-    color:black;
-}
-nav ul a:hover{
-    color:var(--darkpurple);
-    text-shadow: var(--darkpurple) 0px 7px 29px;
-}
-.container{
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-.title{
-    color: #f1edec;
-    font-style: italic;
-    text-shadow: rgba(0, 0, 0, 0.7) 5px 7px 0px;
-    position: absolute;
-    font-size: 10rem;
-    font-weight: 800;
-    align-self: center;
-    text-align: center;
-    margin-bottom: 25vh;
-}
-.title:hover{
-    text-shadow: rgba(255, 255, 255, 0.5) 0px  0px  10px;
+nav h1 {
+  margin-top: 0.5rem;
+  font-size: 2.4rem;
+  margin-left: 3%;
+  align-self: center;
+  text-shadow: hsla(0, 0%, 0%, 0.25) 0px 2px 8px;
 }
 
-.undertitle{
-    color: #f1edec;
-    margin-top: 16vh;
-    border-radius: 2rem;
-    width: 35rem;
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 1rem 1rem;
-    position: absolute;
-    align-self: center;
-    text-align: center;
-    background-color: var(--darkpurple);
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 14px 28px, rgba(0, 0, 0, 0.2) 0px 10px 10px;
+nav h1:hover {
+  color: var(--lightpurple);
+  text-shadow: hsla(0, 0%, 0%, 0.1) 0px 2px 8px;
 }
 
-
-.bgd{
-    margin-top: 0.5%;
-    width: 95vw;
-    height:  57rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    position: relative;
+nav ul {
+  display: flex;
+  align-self: center;
+  justify-content: flex-end;
+  position: absolute;
+  right: 6rem;
+  font-weight: 500;
+  list-style: none;
+}
+.burger {
+  display: none;
+}
+.burger_list {
+  display: none;
+}
+.purple {
+  color: var(--darkpurple);
+}
+.purple:hover {
+  color: black;
+  text-shadow: rgba(100, 100, 111, 0.2) 0px 2px 6px;
 }
 
-.b1{
-    position: absolute;
-    left: center;
-    top: 75%;
-    width: 65vw;
-    height: 46rem;
-    background-color: #f1edec;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+nav ul a {
+  text-decoration: none;
+  text-shadow: hsla(0, 0%, 0%, 0.25) 0px 2px 6px;
+  color: black;
+}
+nav ul > li {
+  font-style: italic;
+  font-size: 1.4rem;
+  text-shadow: hsla(0, 0%, 0%, 0.25) 0px 2px 6px;
+  padding-left: 5.5rem;
+  padding-top: 0.9rem;
+  color: black;
+}
+nav ul a:hover {
+  color: var(--darkpurple);
+  text-shadow: var(--darkpurple) 0px 7px 29px;
 }
 
-.kreska{
-    position: absolute;
-    background-color: black;
-    width: 3vw;
-    height: 0.20rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    top: 5.3%;
-    left: 4%;
+.container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.title {
+  color: #f1edec;
+  font-style: italic;
+
+  text-shadow: rgba(0, 0, 0, 0.7) 5px 7px 0px;
+  position: absolute;
+  font-size: 10rem;
+  font-weight: 800;
+  align-self: center;
+  text-align: center;
+  margin-bottom: 25vh;
+}
+.title:hover {
+  text-shadow: rgba(255, 255, 255, 0.5) 0px 0px 10px;
+}
+.undertitle {
+  color: #f1edec;
+  margin-top: 16vh;
+  border-radius: 2rem;
+  width: 35rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem 1rem;
+  position: absolute;
+  align-self: center;
+  text-align: center;
+  background-color: var(--darkpurple);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 14px 28px, rgba(0, 0, 0, 0.2) 0px 10px 10px;
+  display: inline-block;
+  letter-spacing: 0.15rem;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  overflow: hidden;
+  z-index: 1;
+}
+.undertitle:hover {
+  color: #151515;
+}
+.undertitle::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  z-index: -1;
+  border-radius: 10rem;
+  transition: 0.3s ease all;
+  transform: scale(0, 1);
+  transform-origin: top left;
 }
 
-.ftd{
-    font-style: italic;
-    font-size: 1.6rem;
-    margin-left: 10%;
-    text-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px ;
-    padding-top: 1.2%;
-    font-weight: 800;
-    align-self: center;
-}
-.bzdj1{
-    position: absolute;
-    top:  11.5%;
-    left: 4%;
-    width: 50%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    height: 65%;
-    cursor: pointer;
+.undertitle:hover::after {
+  transform: scale(1, 1);
+  transform-origin: top left;
 }
 
-.bzdj1:hover{
-    opacity: 0.8;
-    
+.bgd {
+  margin-top: 0.5%;
+  width: 95vw;
+  height: 57rem;
+  box-shadow: hsla(0, 0%, 0%, 0.2) 0px 5px 15px;
+  position: relative;
 }
 
-.b1data{
-    margin-left: 58%;
-    margin-top: 5%;
-    text-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px;
-    color: var(--textandborders);
-    font-size: 1.2rem;
+.b1 {
+  position: absolute;
+  left: center;
+  top: 75%;
+  width: 65vw;
+  height: 46rem;
+  background-color: #f1edec;
+  box-shadow: hsla(0, 0%, 0%, 0.2) 0px 5px 15px;
 }
 
-.b1 h3{
-    margin-left:58%;
-    margin-top: 2%;
-    padding-right: 1%;
-    font-size: 3rem;
-    text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    color: var(--darkpurple);
-    font-style: italic;
+.kreska {
+  position: absolute;
+  background-color: black;
+  width: 3vw;
+  height: 0.2rem;
+  box-shadow: hsla(0, 0%, 0%, 0.5) 0px 5px 15px;
+  top: 5.3%;
+  left: 4%;
 }
 
-.b1 h3 a{
-    color: var(--darkpurple);
-    text-decoration: none;
+.ftd {
+  font-style: italic;
+  font-size: 1.6rem;
+  margin-left: 10%;
+  text-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px;
+  padding-top: 1.2%;
+  font-weight: 800;
+  align-self: center;
+}
+.bzdj1 {
+  position: absolute;
+  top: 11.5%;
+  left: 4%;
+  width: 50%;
+  box-shadow: hsla(0, 0%, 0%, 0.3) 0px 5px 15px;
+  height: 65%;
+  cursor: pointer;
 }
 
-.b1 h3 a:hover{
-    color: black;
-    cursor: pointer;
-
+.bzdj1:hover {
+  opacity: 0.8;
 }
 
-
-.b1opis{
-
-    margin-left: 58%;
-    margin-top: 2%;
-    text-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    padding-right: 4.5%;
-    font-size: 1.4rem;
-    color: var(--textandborders)
+.b1data {
+  margin-left: 58%;
+  margin-top: 5%;
+  text-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px;
+  color: var(--textandborders);
+  font-size: 1.2rem;
 }
 
-.ultraliga_div{
-    display: flex;
+.b1 h3 {
+  margin-left: 58%;
+  margin-top: 2%;
+  padding-right: 1%;
+  font-size: 3rem;
+  text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  color: var(--darkpurple);
+  font-style: italic;
 }
 
-.ultraliga{
-    background-color: var(--darkpurple);
-    width: 100vw;
-    height: 35rem;
-    margin-top: 23%;
-    box-shadow: #856dff 0px 0px 10px 0px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.b1 h3 a {
+  color: var(--darkpurple);
+  text-decoration: none;
 }
 
-
-.ultraliga h1{
-    color: var(--lightpurple);
-    font-size: 28rem;
-    width: 100vw;
-    text-shadow: rgba(50, 50, 93, 0.158) 0px 6px 12px, rgba(0, 0, 0, 0.178) 0px 3px 7px;
+.b1 h3 a:hover {
+  color: black;
+  cursor: pointer;
 }
 
-
-
-.leagues h1{
-    font-size: 2.4rem;
-    margin-left: -80%;
-    margin-top: 4%;
-    align-self: center;
-    text-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px ; 
+.b1opis {
+  margin-left: 58%;
+  margin-top: 2%;
+  text-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding-right: 4.5%;
+  font-size: 1.4rem;
+  color: var(--textandborders);
 }
 
-.ultra{
-    width: 45vw;
-    margin-left: 2%;
-    margin-top: 13%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    cursor: pointer;
+.ultraliga_div {
+  display: flex;
 }
 
-.ultra:hover{
-    opacity: 0.8;
-    
-}
-.tytulultra{
-    margin-top: 5%;
-}
-.tytulultra a{
-    width: 100vw;
-    margin-left: 5%;
-    padding-right: 1%;
-    font-size: 3rem;
-    text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    color: var(--darkpurple);
-    font-style: italic;
-    text-decoration: none;
-}
-
-.tytulultra a:hover{
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+.ultraliga {
+  background-color: var(--darkpurple);
+  width: 100vw;
+  height: 35rem;
+  margin-top: 25%;
+  margin-bottom: 3%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  align-self: center;
+  text-align: center;
+  background-color: var(--darkpurple);
+  box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.25);
+  display: inline-block;
+  letter-spacing: 0.15rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  z-index: 1;
 }
 
-.tytulultra:hover ~ .opisultra{
-    color: var(--darkpurple)
+.ultraliga h1 {
+  color: var(--lightpurple);
+  font-size: 28rem;
+  width: 100vw;
+  text-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.25);
+  transform: skewY(0.5deg);
 }
 
-.opisultra{
-    margin-top: 3.5%;
-    margin-left: 5%;
-    text-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    padding-right: 25%;
-    font-size: 2rem;
-    color: var(--textandborders)
+.ultraliga > h1:hover {
+  color: #151515;
+  transition: 1.5s ease all;
+  transform: skewY(-0.5deg);
+  text-shadow: #aaaaaa 0.05em 0.05em, #cccccc 0.1em 0.1em, #eeeeee 0.15em 0.15em;
 }
 
-
-
-.sponsors{
-    background-color: var(--darkpurple);
-    width: 100vw;
-    height: 10rem;
-    margin-top: 5vw;
-    box-shadow: var(--lightpurple) 0px 0px 10px 0px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    
+.ultraliga::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  z-index: -1;
+  transition: 0.7s ease all;
+  transform: scale(0, 1);
+  transform-origin: top right;
 }
 
-.sponsors ol, ol li {
-	display: block;
-	list-style: none;
-	margin: 0;
-	padding: 0;
+.ultraliga:hover::after {
+  transform: scale(1, 1);
+  transform-origin: right;
+}
+
+.leagues h1 {
+  font-size: 3rem;
+  margin-left: -71%;
+  margin-top: 1%;
+  align-self: center;
+  text-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px;
+}
+
+.ultra {
+  width: 45vw;
+  margin-left: 13%;
+  margin-top: 13%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+}
+
+.ultra:hover {
+  opacity: 0.8;
+}
+.tytulultra {
+  margin-top: 10%;
+}
+.tytulultra a {
+  width: 100vw;
+  margin-left: 25%;
+  padding-right: 1%;
+  font-size: 3.5rem;
+  text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  color: var(--darkpurple);
+  font-style: italic;
+  text-decoration: none;
+}
+
+.tytulultra a:hover {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.tytulultra:hover ~ .opisultra {
+  color: var(--darkpurple);
+}
+
+.opisultra {
+  margin-top: 5%;
+  margin-left: 25%;
+  text-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding-right: 10%;
+  font-size: 2.5rem;
+  color: var(--textandborders);
+}
+
+.sponsors {
+  background-color: var(--darkpurple);
+  width: 100vw;
+  height: 10rem;
+  margin-top: 8%;
+  box-shadow: var(--lightpurple) 0px 0px 10px 0px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.sponsors ol,
+ol li {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .sponsors ol li {
-    padding-right: 4vw;
-    margin-left: 6vw;
-    float: left;
-	display: inline;
-	white-space: nowrap;
+  padding-right: 4vw;
+  margin-left: 6vw;
+  float: left;
+  display: inline;
+  white-space: nowrap;
 }
 
-.zd1{
-    margin-top: 2vw;
-    width: 9.5vw;
-}
-
-.zd2{
-    margin-top: 1vw;
-    width: 6.3vw;
-}
-
-.zd3{
-    margin-top: 1vw;
-    width: 6vw;
-}
-
-.zd4{
-    margin-top: 1vw;
-    width: 6vw;
-}
-
-.zd5{
-    margin-top: 0.7vw;
-    width: 4vw;
-}
-
-.zd6{
-    margin-top: 0.7vw;
-    width: 4vw;
+.sponsors img {
+  margin-top: 0.7vw;
+  width: 6vw;
+  aspect-ratio: 3/2;
+  object-fit: contain;
 }
 /* 900 */
 
+@media only screen and (max-width: 900px) {
+  .title {
+    margin-top: -10%;
+  }
+  nav ul > li {
+    padding-left: 4rem;
+  }
 
-@media only screen and (max-width: 900px){
-    
+  .b1 {
+    width: 100%;
+  }
+  .ftd {
+    margin-top: 0.5%;
+  }
+  .b1 h3 {
+    font-size: 2rem;
+  }
+  .ultraliga {
+    width: 100%;
+    height: 20rem;
+    margin-top: 40%;
+  }
 
-    .title{
-        margin-top: -10%;
+  .ultraliga h1 {
+    font-size: 15rem;
+  }
 
-    }
-    nav ul>li{
-        padding-left: 4rem;
-    }
-
-    .b1{
-        width: 100%;
-    }
-    .ftd{
-        margin-top: 0.5%;
-    }
-    .b1 h3{
-        font-size: 2rem;
-    }
-    .ultraliga{
-        width: 100%;
-        height: 20rem;
-        margin-top: 40%;
-    }
-
-
-    .ultraliga h1{
-        font-size: 15rem;
-    }
-
-    .ultra{
-        margin-top: 18.5%;
-
-    }
+  .ultra {
+    margin-top: 18.5%;
+  }
 }
-/* 600 */ 
+/* 600 */
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
+  .bgd {
+    width: 100%;
+    margin-bottom: 28%;
+    height: 36rem;
+    box-shadow: none;
+  }
+  .title {
+    margin-top: -20%;
+    font-size: 8rem;
+  }
 
-    .bgd{
-        width: 100%;
-        margin-bottom: 28%;
-        height: 36rem;
-        box-shadow: none;
-    }
-    .title{
-        margin-top: -20%;
-        font-size: 8rem;
-    }
-    
-    .undertitle{
-        margin-top: 5%;
-    }
+  .undertitle {
+    margin-top: 5%;
+  }
 
-    nav ul{
-        display: none;
-    }
-    .burger{
-        display: inline;
-        position: absolute;
-        right: 1.5rem;
-        top: -0.2rem;
-        font-size: 4.5rem;
-        cursor: pointer;
-    }
-    .burger_list{
-        display: none;
-        margin-right: 7rem;
-        list-style: none;
-        text-decoration: none;
-    }
-    .burger_list a{
-        text-decoration: none;
-    }
-    .burger_list li{
-        padding-left: 2rem;
-        margin-bottom: 1rem;
-        font-size: 1.7rem;
-        color: black;
-    }
-    .b1{
-        box-shadow: none;
-    }
-    .ftd{
-        font-size: 3.5rem;
-        font-weight: 500;
-        margin-top: -0.5%;
-        margin-left: 37%;
-    }
-    .kreska{
-        margin-left: 28%;
-        
-    }
+  nav ul {
+    display: none;
+  }
+  .burger {
+    display: inline;
+    position: absolute;
+    right: 1.5rem;
+    top: -0.2rem;
+    font-size: 4.5rem;
+    cursor: pointer;
+  }
+  .burger_list {
+    display: none;
+    margin-right: 7rem;
+    list-style: none;
+    text-decoration: none;
+  }
+  .burger_list a {
+    text-decoration: none;
+  }
+  .burger_list li {
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    color: black;
+  }
+  .b1 {
+    box-shadow: none;
+  }
+  .ftd {
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-top: -0.5%;
+    margin-left: 37%;
+  }
+  .kreska {
+    margin-left: 28%;
+  }
 
-    .bzdj1{
-        box-shadow: none;
-        padding-top: 5%;
-        width: 100%;
-        height: 36rem;
-        margin-left: -4%;
-    }
-    .b1data{
-        margin-top: 65%;
-        margin-left: 5%;
-    }
-    
-    .b1 h3{
-        margin-left: 5%;
-    }
-    
-    .b1opis{
-        margin-left: 5%;
-    }
+  .bzdj1 {
+    box-shadow: none;
+    padding-top: 5%;
+    width: 100%;
+    height: 36rem;
+    margin-left: -4%;
+  }
+  .b1data {
+    margin-top: 65%;
+    margin-left: 5%;
+  }
 
-    .ultraliga{
-        width: 100%;
-        height: 15rem;
-        margin-top: 80%;
-    }
-    
-    .ultraliga h1{
-        padding-top: 1.5%;
-        padding-left: 1%;
-        font-size: 10rem;
-        box-shadow: none;
-    }
-    .ultraliga_div{
-        display: block;
-    }
-    .ultra{
-        margin-left: 0;
-        width: 100vw;
-    }
+  .b1 h3 {
+    margin-left: 5%;
+  }
 
-    .leagues h1{
-        align-self: center;
-        padding: 0;
-        margin: 0;
-        font-size: 4rem;
-        margin-top: -42rem;
-        text-align: center;
-    }
-    
-    .tytulultra{
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 0;
-        margin: 0;
-        margin-top: 40rem;
-    }
-    
-    .opisultra{
-        margin: 0;
-        padding-left: 0rem;
-        padding-right: 0rem;
-        margin-top: 3rem;
-        font-size: 2rem;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin-bottom: 8rem;
-    }
+  .b1opis {
+    margin-left: 5%;
+  }
 
+  .ultraliga {
+    width: 100%;
+    height: 15rem;
+    margin-top: 80%;
+  }
+
+  .ultraliga h1 {
+    padding-top: 1.5%;
+    padding-left: 1%;
+    font-size: 10rem;
+    box-shadow: none;
+  }
+  .ultraliga_div {
+    display: block;
+  }
+  .ultra {
+    margin-left: 0;
+    width: 100vw;
+  }
+
+  .leagues h1 {
+    align-self: center;
+    padding: 0;
+    margin: 0;
+    font-size: 4rem;
+    margin-top: -42rem;
+    text-align: center;
+  }
+
+  .tytulultra {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 40rem;
+  }
+
+  .opisultra {
+    margin: 0;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 8rem;
+  }
 }
 
+/* 550 */
 
+@media only screen and (max-width: 550px) {
+  .b1data {
+    margin-top: 70%;
+    margin-left: 5%;
+  }
+  .ultraliga {
+    margin-top: 90%;
+    width: 100%;
+  }
 
-/* 550 */ 
-
-@media only screen and (max-width: 550px){
-    .b1data{
-        margin-top: 70%;
-        margin-left: 5%;
-    }
-    .ultraliga{
-        margin-top: 90%;
-        width: 100%;
-    }
-    
-    .ultraliga h1{
-        font-size: 9rem;
-    }
-    .leagues h1{
-        margin-left: -2rem;
-        margin-top: -39rem;
-    }
-    .tytulultra{
-        margin-top: 38rem;
-        margin-left: -2rem;
-    }
-    .tytulultra a{
-        font-size: 2.5rem;
-    }
+  .ultraliga h1 {
+    font-size: 9rem;
+  }
+  .leagues h1 {
+    margin-left: -2rem;
+    margin-top: -39rem;
+  }
+  .tytulultra {
+    margin-top: 38rem;
+    margin-left: -2rem;
+  }
+  .tytulultra a {
+    font-size: 2.5rem;
+  }
 }
-/* 420 */ 
+/* 420 */
 
-@media only screen and (max-width: 420px){
-    
-    .title{
-        font-size: 6rem;
-    }
-    .ftd{
-        margin-top: 2%;
-        margin-left: 30%;
-    }
-    .kreska{
-        margin-top: 2%;
-        margin-left: 20%;
-    }
-    .b1data{
-        margin-top: 90%;
-        margin-left: 5%;
-    }
-    .ultraliga{
-        margin-top: 140%;
-        width: 100%;
-    }
-    
-    .ultraliga h1{
-        padding-top: 6%;
-        font-size: 7.2rem;
-    }
-    .ultra{
-        margin-top: 25%;
-    }
-    .leagues{
-        margin-top: -31rem;
-    }
+@media only screen and (max-width: 420px) {
+  .title {
+    font-size: 6rem;
+  }
+  .ftd {
+    margin-top: 2%;
+    margin-left: 30%;
+  }
+  .kreska {
+    margin-top: 2%;
+    margin-left: 20%;
+  }
+  .b1data {
+    margin-top: 90%;
+    margin-left: 5%;
+  }
+  .ultraliga {
+    margin-top: 140%;
+    width: 100%;
+  }
 
-
-
-
-
+  .ultraliga h1 {
+    padding-top: 6%;
+    font-size: 7.2rem;
+  }
+  .ultra {
+    margin-top: 25%;
+  }
+  .leagues {
+    margin-top: -31rem;
+  }
 }
-    
-/* 375 */ 
 
-@media only screen and (max-width: 420px){
-    .b1data{
-        margin-top: 100%;
-    }
-    .burger_list li{
-        padding-left: 2rem;
-        font-size: 1.rem;
-    }
-    .ultraliga h1{
-        padding-top: 8%;
-        font-size: 6.5rem;
-    }
+/* 375 */
 
-    .leagues h1{
-        font-size: 3.5rem;
-        margin-top: -28rem;
-    }
+@media only screen and (max-width: 420px) {
+  .b1data {
+    margin-top: 100%;
+  }
+  .burger_list li {
+    padding-left: 2rem;
+    font-size: 1rem;
+  }
+  .ultraliga h1 {
+    padding-top: 8%;
+    font-size: 6.5rem;
+  }
 
-    .tytulultra{
-        margin-top: 28rem;
-    }
+  .leagues h1 {
+    font-size: 3.5rem;
+    margin-top: -28rem;
+  }
 
-
+  .tytulultra {
+    margin-top: 28rem;
+  }
 }
